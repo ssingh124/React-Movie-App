@@ -1,0 +1,17 @@
+.menu{
+    margin-top:1.2em;
+    display: flex;
+   width:100%;
+   border:1px solid gray;
+}
+.item{
+width:33.33%;
+padding:.8em;
+}
+.item a{
+    padding:.8em;
+    width:33.33%;
+}
+.menu .active{
+    border-bottom: 1px solid blue;
+}

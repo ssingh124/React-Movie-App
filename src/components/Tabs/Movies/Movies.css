@@ -1,0 +1,39 @@
+.movies{
+    margin-top:1.2em;
+
+    width:100%;
+    height: auto;
+}
+
+
+
+
+
+
+/* Movies Card CSS */
+.MoviesCard{
+    margin-top:1.2em;
+}
+.container .MuiPaper-root{
+    width:80%;
+    margin:auto;
+    margin-bottom: 1.5em;
+}
+.card_img img{
+    width:80%;
+    text-align: left;
+}
+.container_card{
+    display: grid;
+    grid-template-columns: 30% auto;
+}
+.card_info{
+    padding:14% 1.2em;
+}
+.popularity{
+    border-left: 1px solid gray;
+
+}
+.sub_info span{
+padding:0 .6em;
+}
