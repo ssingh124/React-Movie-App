@@ -79,6 +79,7 @@ render() {
           value={this.category}
           onChange={(e) => this.handleChange(e)}       
           variant="outlined"
+          style ={{width: '10%'}}   
         >
           {categories.map(option => (
               <MenuItem key={option.value} value={option.value}>
@@ -92,7 +93,7 @@ render() {
       Otherwise it will call <MovieContainer component to display Movies> */}
       
       {show ? (<MoviesContainer movies={movies}  abc={exp} />) : 
-      (<Loader type="Puff" color="#00BFFF" height={100} width={100} timeout={6000} />)}
+           <h4>Please Select a Category</h4>}
     
     </div>
    );

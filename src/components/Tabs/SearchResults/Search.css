@@ -1,24 +1,15 @@
-.TvShows{
+.NoResults{
+    margin-top: 1.2em;
+}
+
+
+/* Search Card css */
+
+
+.SearchCard{
     margin-top:1.2em;
-
-    width:100%;
-    height: auto;
 }
 
-
-
-
-
-
-/* TV Shows Card CSS */
-.TvShowsCard{
-    margin-top:2em;
-}
-.container .MuiPaper-root{
-    width:80%;
-    margin:auto;
-    margin-bottom: 1.5em;
-}
 .card_img img{
     width:80%;
     text-align: left;
@@ -36,4 +27,11 @@
 }
 .sub_info span{
 padding:0 .6em;
+}
+
+.search{
+    margin-top:1.2em;
+
+    width:100%;
+    height: auto;
 }

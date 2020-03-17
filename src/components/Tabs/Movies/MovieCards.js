@@ -33,7 +33,7 @@ const MovieCards = props => {
             <h1>{title}</h1>
             
             <div className="sub_info">
-                <span clasName="release_date"> Release Date:{release_date}</span>
+                <span className="release_date"> Release Date:{release_date}</span>
                 <span className="popularity">Popularity: {popularity}</span>
             </div>
             <p>{ overview}</p>
