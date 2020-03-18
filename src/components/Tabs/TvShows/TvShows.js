@@ -1,12 +1,10 @@
 // Reference https://material-ui.com/components/text-fields/
 
 import React from 'react';
-
 import TextField from '@material-ui/core/TextField';
 import MenuItem from '@material-ui/core/MenuItem';
 import TvShowsContainer from './TvShowsContainer'
 import axios from 'axios';
-import Loader from 'react-loader-spinner';
 import "./TvShows.css";
 
 // Drop down menu Values for categories
@@ -32,7 +30,6 @@ const categories = [
 
 
 class TvShows extends React.Component {
-  
   state = { 
     show: false,
     category:'',
@@ -72,7 +69,6 @@ render() {
     <div className="TvShows">
         
       <TextField
-
           className="category_dropdown"
           select
           label="Category"  

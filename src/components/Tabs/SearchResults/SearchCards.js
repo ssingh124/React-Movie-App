@@ -7,14 +7,12 @@ import "./Search.css";
 
 
 const SearchCards = props => {
-  
-
   const { title, popularity,  release_date, overview , uri, show} = props
   const imgUrl = `https://image.tmdb.org/t/p/w500${uri}`;
 
-
-
+  // Checking  if user selected all value for search or not
   if(show){
+    // checking if application fetched results or not
     if(title == "noResults"){   
         console.log(title+"From vcarfyhkcjhkcgjgh")
         return(
@@ -28,16 +26,12 @@ const SearchCards = props => {
             <div className="search">
           <Card>
           <div className='container_card'>
-      
               <div className="card_img"> 
-                 
               <img src={imgUrl} class="img-responsive"/>
-              
               </div >
               <div >
                   <div className="card_info">
                   <h1>{title}</h1>
-                  
                   <div className="sub_info">
                       <span className="release_date"> Release Date:{release_date}</span>
                       <span className="popularity">Popularity: {popularity}</span>
@@ -45,7 +39,6 @@ const SearchCards = props => {
                   <p>{ overview}</p>
                   </div>
               </div> 
-      
           </div>
           </Card>
       </div>

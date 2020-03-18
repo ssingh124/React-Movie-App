@@ -5,7 +5,6 @@ import Movies from './Movies/Movies';
 import SearchContainer from './SearchResults/SearchContainer';
 import TvShows from './TvShows/TvShows';
 import Title from './Title/Title';
-import NoSearch from './SearchResults/NoSearch';
 import SearchForm from './SearchForm/SearchForm'
 // Importing CSS file
 import "./Tabs.css";
@@ -77,13 +76,8 @@ fetchResults = e => {
 
 
 
-
-
-
-
   render()
   {
-
     // TAb Options and Their corresponding components to be rendered on click of a Tab
     const panes = [
       {

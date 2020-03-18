@@ -1,7 +1,5 @@
 import React from 'react'
 import Button from '@material-ui/core/Button'
-
-import { makeStyles } from '@material-ui/core/styles';
 import TextField from '@material-ui/core/TextField';
 import MenuItem from '@material-ui/core/MenuItem';
 // Drop down menu Values for categories
@@ -20,7 +18,6 @@ const categories = [
 
 
 const SearchForm = props => {
- 
 
   return (
     //   Recieving Two functions as props
@@ -28,9 +25,6 @@ const SearchForm = props => {
 <form  onSubmit={props.onSubmit}>
     {/* Handling changes in search bar and sending values to search.js throught onInputChange function  */}
     <div style={{ display: 'inline' }}>
-             
-
-
     <TextField
         margin="normal"
         id="outlined-required"
@@ -40,8 +34,6 @@ const SearchForm = props => {
         variant="outlined"
         onChange={e => props.onInputChange(e.target.value)}
       />
-      
-
     <TextField
             className="category_dropdown"
             select
@@ -49,7 +41,6 @@ const SearchForm = props => {
             onChange={(e) => props.onTypeChange(e.target.value)}       
             variant="outlined"
             margin="normal"
-            
             style ={{width: '12%', marginLeft: '1.2em'}}
       >
             {categories.map(option => (
@@ -58,11 +49,7 @@ const SearchForm = props => {
                 </MenuItem>
             ))}
     </TextField>
-      
-     
-     
     
-
       <Button 
       color="primary"
       margin="normal"

@@ -6,7 +6,6 @@ import TextField from '@material-ui/core/TextField';
 import MenuItem from '@material-ui/core/MenuItem';
 import MoviesContainer from './MoviesContainer'
 import axios from 'axios';
-import Loader from 'react-loader-spinner';
 import "./Movies.css";
 
 // Drop down menu Values for categories
@@ -72,7 +71,6 @@ render() {
     <div className="movies">
         
       <TextField
-
           className="category_dropdown"
           select
           label="Category"  
